@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AgroVision AI - Research Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Chart.js (REQUIRED for graphs) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+<div class="overlay">
+
+<h1>🌾 AgroVision AI - Research Dashboard</h1>
+
+<div class="upload-box">
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Predict</button>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>Accuracy</h3>
+        <h2 id="accuracy">-</h2>
+    </div>
+
+    <div class="card">
+        <h3>mIoU</h3>
+        <h2 id="miou">-</h2>
+    </div>
+
+    <div class="card">
+        <h3>F1 Score</h3>
+        <h2 id="f1">-</h2>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Class Distribution</h2>
+    <canvas id="pieChart"></canvas>
+</div>
+
+<div class="section">
+    <h2>IoU Bar Graph</h2>
+    <canvas id="iouChart"></canvas>
+</div>
+
+
+<div class="section">
+    <h2>Confusion Matrix</h2>
+    <canvas id="confusionChart"></canvas>
+</div>
+
+<div class="section">
+    <h2>Model Training Progress</h2>
+    <canvas id="trainingChart"></canvas>
+</div>
+
+<div id="alerts" class="alert-box"></div>
+
+</div>
+
+<!-- JS File -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>

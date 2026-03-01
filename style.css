@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") no-repeat center center fixed;
+    /* background: url("/static/farm.jpg") no-repeat center center fixed; */
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.75);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+.section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+canvas {
+    background: white;
+    margin: 20px auto;
+    display: block;
+    max-width: 500px;
+}
+
+.alert-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 0, 0, 0.6);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.results-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.image-box img {
+    border-radius: 10px;
+}
+
+.info-box {
+    text-align: left;
+    font-size: 18px;
+}
+
+.main-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.left-panel {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.right-panel {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+}
+
+.left-panel canvas {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+.right-panel img {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
